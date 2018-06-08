@@ -1,0 +1,28 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"plugins": ["html"],
+	"rules": {
+		"no-console": "off",
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "windows"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "never"],
+		"prettier/prettier": [
+			"error",
+			{
+				"singleQuote": true,
+				"useTabs": true,
+				"semi": false
+			}
+		]
+	}
+}
