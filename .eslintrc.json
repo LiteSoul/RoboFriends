@@ -5,6 +5,7 @@
 		"es6": true,
 		"node": true
 	},
+<<<<<<< HEAD
 	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
 	"parserOptions": {
 		"sourceType": "module"
@@ -12,12 +13,21 @@
 	"plugins": ["html"],
 	"rules": {
 		"no-console": "off",
+=======
+	"extends": ["eslint:recommended", "prettier"],
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"plugins": ["html", "prettier"],
+	"rules": {
+>>>>>>> c003b8c9c94402989c45c3d3e2efcf1f86e97c6d
 		"indent": ["error", "tab"],
 		"linebreak-style": ["error", "windows"],
 		"quotes": ["error", "single"],
 		"semi": ["error", "never"],
 		"prettier/prettier": [
 			"error",
+<<<<<<< HEAD
 			{
 				"singleQuote": true,
 				"useTabs": true,
@@ -26,3 +36,9 @@
 		]
 	}
 }
+=======
+			{ "singleQuote": true, "useTabs": true, "semi": false }
+		]
+	}
+}
+>>>>>>> c003b8c9c94402989c45c3d3e2efcf1f86e97c6d
