@@ -1,37 +1,7 @@
 {
-	"env": {
-		"browser": true,
-		"commonjs": true,
-		"es6": true,
-		"node": true
-	},
-	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
-	"parserOptions": {
-		"sourceType": "module"
-	},
-	"plugins": ["html"],
+	"extends": "react-app",
+	"plugins": ["prettier"],
 	"rules": {
-		"no-console": "off",
-		"indent": ["error", "tab"],
-		"linebreak-style": ["error", "windows"],
-		"quotes": ["error", "single"],
-		"semi": ["error", "never"],
-		"prettier/prettier": [
-			"error", <<
-			<< << < HEAD {
-				"singleQuote": true,
-				"useTabs": true,
-				"semi": false
-			}
-		]
+		"prettier/prettier": "error"
 	}
-} ===
-=== = {
-	"singleQuote": true,
-	"useTabs": true,
-	"semi": false
 }
-]
-}
-} >>>
->>> > c003b8c9c94402989c45c3d3e2efcf1f86e97c6d

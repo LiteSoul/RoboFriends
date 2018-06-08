@@ -1,3 +1,6 @@
-useTabs: true
-singleQuote: true
-semi: false
+{
+	"useTabs": true,
+	"singleQuote": true,
+	"semi": false,
+	"trailingComma": "es5"
+}
