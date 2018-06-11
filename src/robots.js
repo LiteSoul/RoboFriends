@@ -1,74 +1,86 @@
 const robots = [{
 		id: 1,
-		name: 'Asoka',
-		version: '4.7',
-		email: 'fgallager0@wiley.com'
+		name: 'Keylex',
+		version: '0.3.1',
+		job: 'Help Desk Operator',
+		email: 'Precious Metals'
 	},
 	{
 		id: 2,
-		name: 'Flexidy',
-		version: '0.2.4',
-		email: 'acornill1@goo.gl'
+		name: 'Span',
+		version: '0.26',
+		job: 'Account Representative III',
+		email: 'Other Consumer Services'
 	},
 	{
 		id: 3,
-		name: 'Alphazap',
-		version: '0.47',
-		email: 'afrancescozzi2@mozilla.com'
+		name: 'Alpha',
+		version: '0.59',
+		job: 'Programmer IV',
+		email: 'Medical/Dental Instruments'
 	},
 	{
 		id: 4,
-		name: 'Tampflex',
-		version: '2.6.2',
-		email: 'dcotesford3@cornell.edu'
+		name: 'Wrapsafe',
+		version: '3.8',
+		job: 'Nurse Practicioner',
+		email: 'Major Pharmaceuticals'
 	},
 	{
 		id: 5,
-		name: 'Wrapsafe',
-		version: '6.34',
-		email: 'tmadison4@mapy.cz'
+		name: 'Tresom',
+		version: '0.7.5',
+		job: 'Senior Editor',
+		email: 'Major Chemicals'
 	},
 	{
 		id: 6,
-		name: 'Sonsing',
-		version: '0.6.2',
-		email: 'yhuffadine5@netvibes.com'
+		name: 'Alpha',
+		version: '0.5.7',
+		job: 'Human Resources Assistant IV',
+		email: 'Oil & Gas Production'
 	},
 	{
 		id: 7,
-		name: 'Stim',
-		version: '0.6.8',
-		email: 'jhuntriss6@exblog.jp'
+		name: 'Asoka',
+		version: '0.49',
+		job: 'Assistant Professor',
+		email: 'Business Services'
 	},
 	{
 		id: 8,
-		name: 'Span',
-		version: '0.46',
-		email: 'lheining7@wired.com'
+		name: 'Voyatouch',
+		version: '1.4',
+		job: 'Business Systems Development Analyst',
+		email: 'n/a'
 	},
 	{
 		id: 9,
-		name: 'It',
-		version: '0.43',
-		email: 'lkirlin8@techcrunch.com'
+		name: 'Alpha',
+		version: '0.1.6',
+		job: 'Actuary',
+		email: 'Biotechnology: Biological Products (No Diagnostic Substances)'
 	},
 	{
 		id: 10,
-		name: 'Otcom',
-		version: '0.42',
-		email: 'smcphillips9@weibo.com'
+		name: 'Bamity',
+		version: '9.4.6',
+		job: 'Accountant II',
+		email: 'Major Banks'
 	},
 	{
 		id: 11,
-		name: 'Gembucket',
-		version: '5.41',
-		email: 'lkillcrossa@cocolog-nifty.com'
+		name: 'Namfix',
+		version: '1.9',
+		job: 'Programmer Analyst IV',
+		email: 'Business Services'
 	},
 	{
 		id: 12,
-		name: 'Tresom',
-		version: '8.8',
-		email: 'mleupoldtb@instagram.com'
+		name: 'Bigtax',
+		version: '0.27',
+		job: 'Mechanical Systems Engineer',
+		email: 'Services-Misc. Amusement & Recreation'
 	}
 ]
 
