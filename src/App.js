@@ -1,4 +1,4 @@
-import React,{ Component } from 'react'
+import React, { Component } from 'react'
 import CardList from './CardList'
 import SearchBox from './SearchBox'
 import robots from './robots'
@@ -8,20 +8,29 @@ class App extends Component {
 		super()
 		this.state = {
 			robots: robots,
-			searchField: ''
+			searchfield: ''
 		}
 	}
 
-	onSearchChange(event){
-		console.log(event.target.value)
+	onSearchChange = event => {
+		this.setState({ searchfield: event.target.value })
 	}
 
 	render() {
+		const filteredRobots = this.state.robots.filter(robot => {
+			return (
+				robot.name
+					.toLowerCase()
+					.includes(this.state.searchfield.toLowerCase()) ||
+				robot.job.toLowerCase().includes(this.state.searchfield.toLowerCase())
+			)
+		})
+
 		return (
 			<div className="tc">
 				<h1>RoboFriends</h1>
 				<SearchBox searchChange={this.onSearchChange} />
-				<CardList robots={this.state.robots} />
+				<CardList robots={filteredRobots} />
 			</div>
 		)
 	}

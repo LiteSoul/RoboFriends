@@ -6,7 +6,7 @@ const SearchBox = ({ searchChange }) => {
 			<input
 				className="pa3 ba b--green bg-lightest-blue"
 				type="search"
-				placeholder="Search by name"
+				placeholder="Search by their names or jobs"
 				onChange={searchChange} //Everytime search changes we call a function in App.js
 			/>
 		</div>
