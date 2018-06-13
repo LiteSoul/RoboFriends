@@ -1,16 +1,25 @@
 import React, { Component } from 'react'
 import CardList from './CardList'
 import SearchBox from './SearchBox'
-import robots from './robots'
 import './App.css'
 
 class App extends Component {
 	constructor() {
 		super()
 		this.state = {
-			robots: robots,
+			robots: [],
 			searchfield: ''
 		}
+	}
+
+	componentDidMount() {
+		fetch('https://my-json-server.typicode.com/LiteSoul/RoboFriends')
+			.then(response => {
+				return response.json()
+			})
+			.then(robots => {
+				this.setState({ robots: robots })
+			})
 	}
 
 	onSearchChange = event => {
