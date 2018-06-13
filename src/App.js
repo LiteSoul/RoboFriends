@@ -13,13 +13,9 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch('https://my-json-server.typicode.com/LiteSoul/RoboFriends')
-			.then(response => {
-				return response.json()
-			})
-			.then(robots => {
-				this.setState({ robots: robots })
-			})
+		fetch('https://api.myjson.com/bins/cgoe6')
+			.then(response => response.json())
+			.then(robots => this.setState({ robots })) //->robots:robots
 	}
 
 	onSearchChange = event => {
@@ -36,13 +32,17 @@ class App extends Component {
 			)
 		})
 
-		return (
-			<div className="tc">
-				<h1 className="f2">RoboFriends</h1>
-				<SearchBox searchChange={this.onSearchChange} />
-				<CardList robots={filteredRobots} />
-			</div>
-		)
+		if (this.state.robots.length === 0) {
+			return <h2 className="tc light-green">Loading...</h2>
+		} else {
+			return (
+				<div className="tc">
+					<h1 className="f2">RoboFriends</h1>
+					<SearchBox searchChange={this.onSearchChange} />
+					<CardList robots={filteredRobots} />
+				</div>
+			)
+		}
 	}
 }
 
