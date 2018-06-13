@@ -25,29 +25,26 @@ class App extends Component {
 	}
 
 	render() {
-		const filteredRobots = this.state.robots.filter(robot => {
+		const { robots, searchfield } = this.state
+		const filteredRobots = robots.filter(robot => {
 			return (
-				robot.name
-					.toLowerCase()
-					.includes(this.state.searchfield.toLowerCase()) ||
-				robot.job.toLowerCase().includes(this.state.searchfield.toLowerCase())
+				robot.name.toLowerCase().includes(searchfield.toLowerCase()) ||
+				robot.job.toLowerCase().includes(searchfield.toLowerCase())
 			)
 		})
-
-		if (this.state.robots.length === 0) {
-			return <h2 className="tc light-green">Loading...</h2>
-		} else {
-			return (
-				<div className="tc">
-					<h1 className="f2">RoboFriends</h1>
-					<SearchBox searchChange={this.onSearchChange} />
-					<Scroll>
-						<CardList robots={filteredRobots} />
-					</Scroll>
-					<Footer />
-				</div>
-			)
-		}
+		//Render return this
+		return !robots.length ? (
+			<h2 className="tc light-green">Loading...</h2>
+		) : (
+			<div className="tc">
+				<h1 className="f2">RoboFriends</h1>
+				<SearchBox searchChange={this.onSearchChange} />
+				<Scroll>
+					<CardList robots={filteredRobots} />
+				</Scroll>
+				<Footer />
+			</div>
+		)
 	}
 }
 
