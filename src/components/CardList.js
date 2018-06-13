@@ -10,7 +10,6 @@ const CardList = ({ robots }) => {
 				name={robot.name}
 				version={robot.version}
 				job={robot.job}
-				email={robot.email}
 			/>
 		)
 	})
