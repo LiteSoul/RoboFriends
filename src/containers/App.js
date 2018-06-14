@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import SearchBox from '../components/SearchBox'
 import Scroll from '../components/Scroll'
 import CardList from '../components/CardList'
-import Footer from '../components/Footer'
+import GithubCorner from 'react-github-corner'
 import './App.css'
 
 class App extends Component {
@@ -42,7 +42,7 @@ class App extends Component {
 				<Scroll>
 					<CardList robots={filteredRobots} />
 				</Scroll>
-				<Footer />
+				<GithubCorner href="https://github.com/LiteSoul/RoboFriends" />
 			</div>
 		)
 	}
