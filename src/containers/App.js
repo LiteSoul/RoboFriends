@@ -34,7 +34,18 @@ class App extends Component {
 		})
 		//Render return this
 		return !robots.length ? (
-			<h2 className="tc light-green">Loading...</h2>
+			<div>
+				<h3 className="tc light-green">Calling friends...</h3>
+				<img
+					src={`./caller.png`}
+					style={{
+						display: 'block',
+						marginLeft: 'auto',
+						marginRight: 'auto'
+					}}
+					alt="caller"
+				/>
+			</div>
 		) : (
 			<div className="tc">
 				<h1 className="f2">RoboFriends</h1>
